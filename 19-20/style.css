@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(#65c7f7, #dff6ff);
+    overflow: hidden;
+}
+.sky{
+    height: 100vh;
+    position: relative;
+}
+.cloud{
+    font-size: 90px;
+    animation: functionalcloud 3s ease-in-out infinite alternate;
+    position: absolute;
+}
+.cloud-one{
+    top: 20%;
+    left: 10%;
+    animation-delay: 2s;
+}
+.cloud-two{
+    top: 55%;
+    left: 10%;
+    animation-delay: 0.5;
+}
+.cloud-three{
+    top: 30%;
+    left: 25%;
+    animation-delay: 3s;
+}
+.cloud-four{
+    top: 45%;
+    left: 30%;
+    animation-delay: 1s;
+}
+/*Анимация она работает, если она вызвана
+    https://cssgridgarden.com/
+
+    https://flukeout.github.io/
+*/
+@keyframes functionalcloud{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: scale(2);
+    }
+    50%{
+        transform: translateX(1200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    /*from{
+        transform: translateX(1200px);
+    }
+      to{
+        transform: translateY(1200px);
+    }*/
+}
